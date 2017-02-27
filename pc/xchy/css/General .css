@@ -1,0 +1,138 @@
+				<div class="content_Hotel">
+					<div class="Hotel_head clear">
+						<ul>
+							<li><a href="">国际酒店</a></li>
+							<li><a href="">国内酒店</a></li>
+							<li><a href="">酒店+景点</a></li>
+							<li><a href="">客栈名宿</a></li>
+							<li><a href="">团购</a></li>
+						</ul>
+					</div>
+					<div class="Hotel_Tri"></div>
+					<div class="Hotel_line"></div>
+				</div>
+<div class="content_Sale_box">
+						<div class="contnt_Sale_box_top clear">
+							<ul>
+								<li><a href=""><span class="Sale_box_top_bg">精选</span></a></li>
+								<li><a href="">跟团游</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">当地游</a></li>
+								<li><a href="">游轮游</a></li>
+								<li class="box_top_right"><a href="">更多特卖汇></a></li>
+							</ul>
+						</div>
+						<div class="content_Sale_box_bottom clear">
+							<div class="Sale_box_bottom_left clear">
+								<ul>
+									<li>
+										<span class="bottom_left_bg">
+											<a href="" class="bottom_left_picB"><img src=""></a>
+											<a href="" class="bottom_left_picC"><img src=""></a>
+											<a href="" class="bottom_left_font">劲爆特价，超值之选！</a>
+											<a class="bottom_left_Tran"></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+<div class="contnt_Sale_box_top clear">
+							<ul>
+								<li><a href=""><span class="Sale_box_top_bg">精选</span></a></li>
+								<li><a href="">跟团游</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">当地游</a></li>
+								<li><a href="">游轮游</a></li>
+								<li class="box_top_right"><a href="">更多特卖汇></a></li>
+							</ul>
+						</div>
+/*热门城市头
+.contnt_Sale_box_top li a {
+	font-size: 12px;
+	line-height: 40px;
+	text-decoration: none;
+	float: left;
+	color: #3983e5;
+	margin: 5px 33px 0 0;
+	font-weight: bold;
+}
+.contnt_Sale_box_top .box_top_right a{
+	font-size: 12px;
+	line-height: 40px;
+	text-decoration: none;
+	float: right;
+	color: #3983e5;
+	margin: 5px 20px 0 0;
+	font-weight: bold;
+}
+.Sale_box_top_bg{
+	float: left;
+	width: 40px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: none;
+	background: #3983e5;
+	color: #FFFFFF;
+	border-radius: 2px 2px 2px 2px ;
+	margin: 10px 0 0 19px;
+}
+*/
+/*楼框
+<div class="content_Sale_box"></div>*/
+					
+/*小车框*/	
+/*公用样式首页头部*/
+<header class="head_top clear">
+				<a href=""><img src="img/XC_2.jpg"></a>
+				<input type="text" name="" value="目的地/酒店/景点/关键字" class="Textb"/>
+				<a href="" ><span class="head_top_Search"></span></a>
+				<ul>
+					<li><a href="" class="red_flag"></a></li>
+					<li><a href="" class="China_font">简体中文</a></li>
+					<li ><a href="" class="Tri"></a></li>
+					<li><span class="head_line"></span></li>
+					<li><a href="" class="head_font">客服中心</a></li>
+					<li><span class="head_line"></span></li>
+					<li><span><a href="" class="head_font">国内:</a><a href="" class="head_font_num">1010-6666</a></span></li>
+					<li ><a href="" class="Tri_1"></a></li>
+					<li><a href=""><span class="head_pic_right"></span></a></li>
+				</ul>
+			</header>
+			<header class="head_nav ">
+				<ul class="clear">
+					<li class="clear"><a href="">首页</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">酒店</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">旅游</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">机票</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">火车</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">汽车票</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">用车</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">门票</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">团购</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">攻略</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">全球购</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">礼品卡</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">商旅</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">更多</a></li>
+					<li><span class="head_nav_line"></span></li>
+					<li><a href="">邮轮</a></li>
+					<li><a href="" class="head_nav_PC"><img src="img/A_4.jpg"></a></li>
+				</ul>
+			</header>
+			/*公用样式首页头部end*/

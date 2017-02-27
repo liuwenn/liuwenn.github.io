@@ -1,0 +1,17 @@
+<ion-tabs  ng-class="{'tabs-item-hide': $root.hideTabs}" class="tabs-icon-top tabs-balanced">
+
+
+  <ion-tab title="首页" icon-on="icon-shouye" icon-off="icon-shouye" href="#/tab/Store">
+    <ion-nav-view name="store-tab"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="预约" icon-on="icon2 font2-yuyue" icon-off="icon2 font2-yuyue" href="#/tab/Appointment">
+    <ion-nav-view name="appointment-tab"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="卡券" icon-on="icon-qiaquanguanli" icon-off="icon-qiaquanguanli" href="#/tab/Card" badge-style="badge-assertive" badge="wxstore.badgeData.ordersBadgeCount">
+    <ion-nav-view name="orders-tab"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="我的" icon-on="icon-foot04" icon-off="icon-foot04" href="#/tab/MyCenter">
+    <ion-nav-view name="myCenter-tab"></ion-nav-view>
+  </ion-tab>
+  
+</ion-tabs>

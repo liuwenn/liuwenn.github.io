@@ -1,0 +1,35 @@
+body,dl,dd,p,h1,h2,h3,h4,h5,p{
+	margin: 0;
+}
+img{
+	border: none;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul li{
+	*display: inline;
+	*vertical-align: top;
+}
+*{margin: 0; padding: 0;}
+
+option{
+	border: 0;
+	*display: inline;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clear{
+	*zoom: 1;
+}
+input,select {
+	padding:0;
+	margin: 0;
+	border: none;
+}

@@ -1,0 +1,33 @@
+<ion-modal-view > 
+	<ion-header-bar class="bar-balanced fix-buttons">
+	  <a class="button button-balanced" ng-click="closeModal()"> 取 消 </a>
+      <h1 class="title">历史优惠券</h1>
+    </ion-header-bar>
+	<ion-content>	
+	  <!-- <div class="list" > -->
+	    	<div class="gray" ng-repeat="coupon in usedCouponList" style="height:30%" >
+           		<div class="div_cardAA" >
+					<img class="card_a" src="resources/images/card-1.png" />
+					<div class="card_money" style="color: #fe523f;">
+						
+						<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%" ng-if="coupon.type == 1">￥</em>
+						<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%" ng-if="coupon.type == 0">折</em>
+						<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">{{coupon.discount}}</span>
+					</div>
+					<span class="card_line"></span>
+					<span class="card_linebottom"></span>
+					<ul class="card_ulAA">
+						<li style="font-size: 16px;font-weight: bold;color: #000000;">{{coupon.name}}<span ng-if="coupon.status == 0">（已过期）</span><span ng-if="coupon.status == 1">（已使用）</span></li>
+						<li>满{{coupon.maxPrice}}元可用</li>
+						<li>{{coupon.startTime | dateFormatFilter}}至{{coupon.endTime | dateFormatFilter}}</li>
+					</ul>	
+				</div>
+				<div class="div_cardBB" ng-click="Jump()">
+					<ul class="card_ulBB">
+						<li>{{coupon.decribe}}</li>
+					</ul>
+				</div>
+			</div>	
+      <!-- </div> -->	     
+	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,23 @@
+<ion-modal-view style="width: 80%;min-height:50%;height: 83.30%; left: 22%;top:8%;background: rgba(255,255,255,0.95);">
+	
+	<ion-header-bar style="height: 0;background-image: none;">
+		<div class="xuan_nav" >筛选</div>
+		
+	</ion-header-bar>	
+	<ion-content class="section_xuan">
+		<div class="xuan_datetimer">
+			<p ng-click="closeModal()">您所选日期和时间:<!--closeModal()-->
+				<time-picker  time-picker-result="toolModel.timePickerResult"  title="请选择时间">时间</time-picker>
+			</p>
+			
+		</div>
+		<div class="xuan_dianQ">
+			<p style="font-size: 12px;">您所选店铺：</p>
+			<ul class="xuan_dian">
+				<li ng-class="{'active':selected===$index}" ng-click="selectedBranch($index)" ng-repeat="FAddress in BranchAddress">{{FAddress.username}}</li>
+			</ul>
+		</div>
+	</ion-content>
+	<button class="button btn_A">重置</button>
+	<button class="button btn_B" ng-click="select(Cocah)">完成</button>
+</ion-modal-view>

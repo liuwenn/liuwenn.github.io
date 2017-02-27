@@ -1,0 +1,45 @@
+<ion-view view-title="抽奖活动" style="background:#eeeeee">
+<ion-content>
+
+<div class="activity-lottery-winning">
+
+	<div class="main" style="padding-bottom:2%" id="activity">
+		<div id="outercont">
+			<div id="outer-cont" style="overflow: hidden;">
+				<div id="outer">
+					<img src="{{activity.dialImg}}" width="310px">
+				</div>
+			</div>
+			<div id="inner-cont">
+				<div id="inner" ng-click="lottery()">
+					<img src="resources/lib/rotate/activity-lottery-2.png">
+				</div>
+			</div>
+		</div>
+		<input type="text" id="userName" value="user" class="hiddenInput" />
+		<input type="text" id="number" ng-model="active.numPerDay" class="hiddenInput" />
+		<div class="boxcontent boxyellow">
+			<div class="box">
+				<div class="title-green">活动说明：</div>
+				<div class="Detail">
+					<p>本次活动每人可以转 {{activity.count}} 次</p>
+					<p>
+						今天还可以转<span id="num"> {{activity.numPerDay}}</span>次
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="boxcontent boxyellow">
+			<div class="box">
+				<div class="title-green">
+					<span>奖项设置：</span>
+				</div>
+				<div style="padding:3px;" class="Detail" ng-repeat="ac in activity.listPrizeSettingsDTOs">
+					<p>{{ac.awardsName}}：{{ac.prizeName}}。奖品数量：{{ac.awardsNum}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</ion-content> </ion-view>

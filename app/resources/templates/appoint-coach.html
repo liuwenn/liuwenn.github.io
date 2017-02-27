@@ -1,0 +1,23 @@
+localStorage.setItem<ion-view view-title="可约教练">
+	<ion-content>
+		<div class="bar bar-header item-input-inset">
+			<label class="item-input-wrapper">
+		    	<i class="icon ion-ios-search placeholder-icon"></i>
+		    	<input type="text" placeholder="输入名字搜索" id="input_A">
+	  		</label>
+			<button class="button button-clear quxiao" style="font-size: 14px;padding: 0;" ng-if="!oIput_A.value">取消</button>
+			<button class="button button-clear sousuo" style="font-size: 14px;padding: 0;" ng-if="oIput_A.value">搜索</button>
+			<button class="button-clear icon font2-shaixuan2" style="font-size: 14px;margin-left: 8px;padding: 0;font-weight:bolder;" ng-click="onCreate()">筛选</button>
+		</div>
+		<div class="list">
+			<a ng-repeat="Cocah in CocahList" class="item item-avatar" style="padding-left: 77px;padding-top: 17px;"  ng-click="tiaomenber(Cocah)";>
+				<img src="http://www.runoob.com/try/demo_source/venkman.jpg" style="top:12px;left:12px;max-width: 55px;max-height: 55px;">
+				<h2 style="width: 100%;overflow: hidden;">
+					<span style="font-size: 14px;margin-left: 3px;font-weight:100;display: inline-block;">{{Cocah.realName}}</span>
+					<span style="font-size: 12px;color: #adadad;margin-left: 6px;display: inline-block;">{{Cocah.username}}</span>
+				</h2>
+				<p style="font-size: 14px;margin-top: 12px;"><i style="color: orangered;margin-right: 5px;">250</i><i style="color: #ADADAD;">元/时</i></p>
+			</a>
+		</div>
+	</ion-content>
+</ion-view>

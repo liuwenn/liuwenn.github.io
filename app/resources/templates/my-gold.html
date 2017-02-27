@@ -1,0 +1,42 @@
+<ion-view view-title="积分记录" hide-tabs="true" >
+	<ion-content class="">
+				
+	    	<div class="tsb-icons" style="margin: 0;">
+	    		<div class="tsb-ic-wrp" style="display: block;">
+					<ion-scroll direction="x" class="tsb-hscroll" style="border-bottom: none;background: #cf9f50;">
+						
+						<div class="Grades_top" style="background-image: 100% 100%; padding-top: 3%;overflow: hidden;font-size: 12px;">
+						 	<ul class="Grades_topulA" style="width: 79%;font-size: 12px;text-align: center;margin: 0 auto; color: white;">
+						 	  	<li class="div_pic" style="width: 19.4%;"><img src="{{memberCenterPageVo.flag1}}"></li>
+						 	  	<li><span>Hi,&nbsp;{{memberCenterPageVo.mnickName}}</span></li>
+						 	  	<li><span>经验值：{{memberCenterPageVo.levelExp}}></span></li>
+						 	</ul>
+						</div>
+					</ion-scroll>
+				</div>
+	    	</div>
+	        <ion-slide-box show-pager="false">
+	            <ion-slide style="background: white;">
+	            	<ion-scroll style="height:100%;">
+	            		<ion-refresher pulling-text="松手刷新" on-refresh="doRefresh()"></ion-refresher>
+	            		<ul class="list list_ka" style="text-align: left;padding: 0 3% 0 3%;margin-top: 2%;">
+	            		 	<li class="item item-divider" style="font-size: 12px;border: none;">
+					          	<span>月份</span>
+					          	<span style="right:0;color: #cdcdcf;">积分记录：</span>
+					        </li>
+					        <li class="item" ng-repeat="exp in expList">
+				              	 <h2>{{exp.expFrom | integralTypeFilter}}</h2>
+	 							 <p>{{exp.createTime}}</p>
+ 							 	<span style="right: 5%; color:red; font-size: 12px;top:19%">+{{exp.exp}}积分</span>
+					        </li>
+					    </ul>   
+	                </ion-scroll>
+	            </ion-slide>
+	          </ion-slide-box>
+				
+				
+				
+
+			
+	</ion-content>
+</ion-view>  

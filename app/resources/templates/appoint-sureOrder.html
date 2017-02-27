@@ -1,0 +1,38 @@
+<ion-modal-view style="background: #EEEEEE;">
+		<ion-header-bar class="bar-balanced fix-buttons">
+			<button class="button-clear ng-binding" ng-click="closemodal5()">取消</button>
+	 		<h1 class="title">确认订单</h1>
+    	</ion-header-bar>
+	<ion-content>
+		<div class="list" style="margin-bottom: 7px;height: 120px;background: white;padding:0 0 11px 5px;font-size: 12px;overflow: hidden;">
+			<h5 style="font-size: 12px;">2016-09-23  选择的支付订单：</h5>
+			<p class="span_p">
+				<span style="" ng-repeat="findCoachh in arr_coachh">{{findCoachh}}:00-{{findCoachh+1}}:00</span>
+			</p>
+			
+		</div>
+		
+      	<div class="list" style="font-size=14px">
+			 <a class="item" href="" style="padding: 16px;">
+			   	会员卡
+			   <span class="item-note icon-right ion-chevron-right" ></span>
+			</a>
+			 <a class="item" href="" style="padding: 16px;">
+			   	优惠劵
+			   <span class="item-note icon-right ion-chevron-right" ></span>
+			</a>
+			<a class="item" href="" style="padding: 16px;">
+			   	<p><span style="float: left;">积&nbsp;分</span><span style="float:right;">&nbsp;共4450积分,满1000可用</span></p>
+			</a>
+			<a class="item" href="" style="padding: 16px;">
+				<p><span style="float: left;">总金额</span><span style="float: right;">￥0.00</span></p>
+				<p>积分</p>
+			</a>
+        </div>	
+		
+	</ion-content>
+	<button style="position:fixed;bottom:0;margin-bottom:0;padding: 0;min-height: 0;font-size: 14px; border: none;" class="button button-full">
+		实付款：￥0.00
+		<span ng-click="showQR()" style="width: 75px; float: right;background: red;color: white;font-size: 12px;">生成二维码</span>
+	</button>
+</ion-modal-view>

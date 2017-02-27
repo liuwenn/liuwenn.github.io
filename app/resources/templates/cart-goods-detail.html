@@ -1,0 +1,7 @@
+<ion-view view-title="商品详情" >
+	<ion-content has-header="true" padding="true">
+	    <div class="imgageList" >
+	        <img ng-src ="/{{wxstore.ctx}}/static-content?contentPath={{goodsDetailImage.imageUrl}}" ng-repeat="goodsDetailImage in goodsDetail.images"  ng-if="goodsDetail.images.length > 0">
+	    </div>
+	</ion-content>
+</ion-view>

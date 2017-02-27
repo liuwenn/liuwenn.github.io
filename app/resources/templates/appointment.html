@@ -1,0 +1,40 @@
+<ion-view view-title="预约项目">
+	<ion-content >
+		<div class="box"><img width="100%" height="120px" src="resources/images/slide/1.jpg" /></div>
+		
+		<tab-slide-box tab="0">
+	    	<div class="tsb-icons">
+	    		<div class="tsb-ic-wrp" style="display: block;">
+					<ion-scroll direction="x" class="tsb-hscroll">
+						<a href="javascript:;"  ng-click="showCouponList(0)" style="width: 40%;">服务</a>
+						<a href="javascript:;" ng-click="showCardList()" style="width: 40%;">商品</a>
+					</ion-scroll>
+				</div>
+	    	</div>
+	        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+	            <ion-slide style="background: white;">
+	            	<ion-scroll style="height:100%">
+	            		<ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCoupon()"></ion-refresher>
+	            		<ul class="service" >
+      						 <li ng-repeat="coupon in couponList"  ng-click="tiaocoach(coupon)"><img src="resources/images/bingbq.jpg"><span ng-bind="coupon.name"></span></li>
+	            		</ul> 
+	                </ion-scroll>
+	            </ion-slide>
+	            <ion-slide style="background: #FFFFFF;">
+	           	 	<ion-scroll style="height:100%">
+		                <ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCard()"></ion-refresher>
+		                <ul class="service">
+	            			<li></li>
+	            			<li></li>
+	            			<li></li>
+	            			<li></li>
+	            			<li></li>
+	            		</ul>
+	                </ion-scroll>
+	            </ion-slide>
+	        </ion-slide-box>
+    	</tab-slide-box>
+		
+		
+	</ion-content>
+</ion-view>

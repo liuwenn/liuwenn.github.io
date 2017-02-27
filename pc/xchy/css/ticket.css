@@ -1,0 +1,441 @@
+.content{
+	height: 1217px;
+}
+.left_content_right_bg_Air{
+	width: 778px;
+	height: 86px;
+	float: left;
+}
+.left_content_right_bg_Air img.left_content_right_bgAA{
+	float: left;
+	margin-top: 34px;
+}
+.left_content_right_bgJJ{
+	margin-top:30px;
+	float: right;
+}
+.left_content_right_Air{
+	width: 181px;
+	height: 68px;
+	margin:8px 41px 0 0px;
+	float: left;
+	*display: inline;
+}
+.left_content_right_Air_logo{
+	width: 14px;
+	height: 16px;
+	float: left;
+	margin: 2px 8px 0 1px;
+	background: url(../img/XC-3.png) no-repeat -345px -16px;
+	overflow: hidden;
+}
+.left_contentt_right_Air dt{
+	height: 20px;
+}
+.left_content_right_china a{
+	font-size: 14px;
+	line-height: 20px;
+	color: #0066cc;
+	text-decoration: none;
+}
+.left_content_right_Air dd{
+	height: 24px;
+}
+.left_content_right_Air dd a {
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #0066cc;
+	float: left;
+}
+.left_content_right_Air dd a.left_content_right_Air_font{
+	color: #a3a3a3;
+	margin: 0 7px 0 0;
+}
+.left_content_right_Air dd a.left_content_right_Air_money{
+	color: #bb0000;
+	float: right;
+}
+.Nav_search_rightA{
+	width: 780px;
+	float: right;
+	/*overflow: hidden;*/
+}
+.content_pic_rightB{
+	width: 780px;
+	float: right;
+}
+.left_content_right_like{
+	width: 780px;
+	height: 38px;
+}
+.left_content_right_like h4{
+	height: 30px;
+	margin-left: 10px;
+}
+.left_content_right_like h4 a {
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+}
+.left_content_right_like .left_content_right_like_font{
+	color: #0066cc;
+	margin: 0 30px 0 0;
+}
+.left_content_right_Calendar{
+	width: 780px;
+	height: 416px;
+	background: #f1f1f1;
+	margin: 10px 0 0 0;
+	padding-top: 8px;
+}
+.left_content_right_Calendar_pic{
+	width: 764px;
+	height: 106px;
+	margin: 0 0 0 8px;
+	/*font-size: 0;*/
+}
+.left_content_right_Calendar_pic img{
+	float: left;
+	margin-right: 1px;
+}
+/*.content_lastA{
+	position: relative;
+}*/
+.Nav_left_content img{
+	position: absolute;
+	left: 307px;
+	top:226px;
+}
+.Nav_left_content_search {
+	line-height: 32px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+/*北京图片*/
+.left_content_right_Calendar_content{
+	width: 764px;
+	height: 90px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+.left_content_right_Calendar_city{
+	width: 190px;
+	height: 81px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 8px;
+	margin-right: 1px;
+	float: left;
+	background: #FFFFFF;
+}
+.left_content_right_Calendar_city dl{
+	width: 183px;
+	height: 63px;
+	margin: 0 0 0 7px;
+}
+.left_content_right_Calendar_city dt{
+	height: 24px;
+}
+.left_content_right_Calendar_city dt a{
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}
+.left_content_right_Calendar_city dd{
+	height: 20px;
+}
+.left_content_right_Calendar_city dd a {
+	font-size: 14px;
+	line-height: 20px;
+	color: #999999;
+}
+.left_content_right_Calendar_Discount{
+	width: 37px;
+	height: 17px;
+	background: #f0f3f4;
+	border: 1px solid #c5cfd3;
+	font-size: 12px;
+	float: left;
+	text-align: center;
+	margin-left: 73px;
+	color: #9ea8ba;
+}
+.left_content_right_Calendar_city .left_content_right_Calendar_moneyA ,.left_content_right_Calendar_city .left_content_right_Calendar_moneyB{
+	color: #c50000;
+}
+.left_content_right_Calendar_city .left_content_right_Calendar_moneyA{
+	font-size: 12px;
+	line-height: 20px;
+	display: inline-block;
+	margin: 0 4px 0 14px;
+}
+.left_content_right_Calendar_city .left_content_right_Calendar_moneyB{
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+}
+/*北京图片结束*/
+.left_content_right_Calendar_contentC{
+	width: 764px;
+	height: 113px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+.left_content_right_Calendar_cityC{
+	width: 190px;
+	height: 113px;
+	border-bottom: 1px solid #d7d7d7;
+	margin-right: 1px;
+	float: left;
+	background: #FFFFFF;
+}
+.left_content_right_Calendar_low{
+	width: 190px;
+	height: 31px;
+	background: #ffffff;
+}
+.left_content_right_Calendar_bg{
+	width: 46px;
+	height: 18px;
+	background: #ff7d2d;
+	font-size: 12px;
+	line-height: 18px;
+	color: #ffffff;
+	float: left;
+	text-align: center;
+	margin-top: 8px;
+}
+.left_content_right_Calendar_cityC dl{
+	width: 183px;
+	height: 63px;
+	margin: 0 0 0 7px;
+}
+.left_content_right_Calendar_cityC dt{
+	height: 24px;
+}
+.left_content_right_Calendar_cityC dt a{
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}
+.left_content_right_Calendar_cityC dd{
+	height: 20px;
+}
+.left_content_right_Calendar_cityC dd a {
+	font-size: 14px;
+	line-height: 20px;
+	color: #999999;
+}
+.left_content_right_Calendar_DiscountC{
+	width: 37px;
+	height: 17px;
+	background: #f0f3f4;
+	border: 1px solid #c5cfd3;
+	font-size: 12px;
+	float: left;
+	text-align: center;
+	margin-left: 73px;
+	color: #9ea8ba;
+}
+.left_content_right_Calendar_cityC .left_content_right_Calendar_moneyA ,.left_content_right_Calendar_cityC .left_content_right_Calendar_moneyB{
+	color: #c50000;
+}
+.left_content_right_Calendar_cityC .left_content_right_Calendar_moneyA{
+	font-size: 12px;
+	line-height: 20px;
+	display: inline-block;
+	margin: 0 4px 0 14px;
+}
+.left_content_right_Calendar_cityC .left_content_right_Calendar_moneyB{
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+}
+.left_content_right_Calendar_contentC{
+	width: 764px;
+	height: 113px;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+.left_content_right_logo_pic{
+	width: 780px;
+	height: 266px;
+	margin: 20px 0 0 0 ;
+}
+.left_content_right_logo_pic a{
+	float:left;
+	*display:inline;
+}
+.left_content_right_logo_pic img{
+	float: left;
+	margin-right: 1px;
+	*display: inline;
+}
+.content_left_Service{
+	width: 380px;
+	height: 226px;
+	margin: 11px 0 0 0;
+}
+.content_left_Service dt{
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	color: #333333;
+}
+.content_left_Service dd{
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #999999;
+}
+.content_left_Service dd a{
+	font-size: 12px;
+	line-height: 22px;
+	text-decoration: none;
+	color: #0053aa;
+}
+.content_bottom{
+	width: 1178px;
+	height: 195px;
+	border: 1px solid #dedede;
+	float: left;
+	margin: 17px 0 0 85px;
+	padding-top: 5px;
+	*display: inline;
+}
+.content_bottom h5{
+	height: 34px;
+	font-size: 12px;
+	line-height: 34px;
+	margin-left: 10px;
+}
+.content_bottom dl{
+	height: 36px;
+	margin-left: 10px;
+}
+.content_bottom dt {
+	/*width: 51px;*/
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #999999;
+	font-weight: bold;
+	float: left;
+	margin-right: 11px;
+	/*overflow: hidden;*/
+	*display: inline;
+}
+.content_bottom dd{
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #999999;
+	float: left;
+	margin-right: 11px;
+	*display: inline;
+	white-space: nowrap;
+}
+.content_bottom dl.content_bottom_two{
+	height: 28px;
+	/*float: left;*/
+}
+.content_bottom_two dt {
+	/*width: 51px;*/
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #999999;
+	font-weight: bold;
+	float: left;
+	margin-right: 11px;
+	/*overflow: hidden;*/
+	*display: inline;
+}
+.content_bottom_two  dd{
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #999999;
+	float: left;
+	margin-right: 11px;
+	*display: inline;
+	white-space: nowrap;
+}
+/*底部*/
+.footer_guild{
+	width: 1180px;
+	height: 36px;
+	float: left;
+	margin: 45px 0 10px 85px;
+}
+.footer_guild_top,.footer_guild_top_bottom {
+	width: 1180px;
+	height: 18px;
+}
+.footer_guild_top li{
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #4c4c4c;
+	float: left;
+}
+.footer_guild_top_bottom li{
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #4c4c4c;
+	float: left;
+}
+.footer_guild_top_first{
+	margin-left: 123px;
+}	
+.footer_guild_top_firstB{
+	margin-left: 138px;
+}	
+.footer_guild_top_line{
+	width: 1px;
+	height: 11px;
+	border-left: 1px solid #8d4c8d;
+	margin: 4px 4px 0 4px;
+	float: left;
+	overflow: hidden;
+}
+.footer_labelC{
+	width: 1180px;
+	height: 34px;
+	margin: 0 0 25px 85px;
+	float: left;
+}
+.footer_label_Frame{
+	width: 88px;
+	height: 32px;
+	border: 1px solid #d1d1d1;
+	font-size: 12px;
+	line-height:32px ;
+	float: left;
+	text-align: center;
+}
+.footer_label_Frame_first {
+	margin-left: 179px;
+	width: 88px;
+	height: 32px;
+	border: 1px solid #d1d1d1;
+	font-size: 12px;
+	line-height:32px ;
+	float: left;
+	text-align: center;
+	*display: inline;
+}
+.footer_label_Frame_first img,.footer_label_Frame img {
+	float: left;
+	margin: 2px 0 0 5px;
+}
+.footer_label_Frame_first ,.footer_label_Frame{
+	margin-right: 10px;
+}
+.Nav_search_left .Nav_search_pic{
+	width: 16px;
+	height: 17px;
+	background: url(../img/XC-3.png) -52px -80px;
+}
