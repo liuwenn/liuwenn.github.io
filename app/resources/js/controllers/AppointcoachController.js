@@ -5,8 +5,8 @@
  * AppointcoachController
  */
 
-WxStoreApp.controller('AppointcoachController', ["$rootScope","$scope","$http","$location","$ionicModal",
-	function($rootScope,$scope, $http,$location,$ionicModal) {
+WxStoreApp.controller('AppointcoachController', ["$rootScope","$scope","$http","$location","$ionicModal","$ionicNavBarDelegate",
+	function($rootScope,$scope, $http,$location,$ionicModal,$ionicNavBarDelegate) {
 
 		//6.2根据产品编码获取教练
 		var str=location.href; //取得整个地址栏
@@ -161,8 +161,10 @@ WxStoreApp.controller('AppointcoachController', ["$rootScope","$scope","$http","
 		
 		
 		
-		var oIput_A=document.getElementById('input_A');
+/*		var oIput_A=document.getElementById('input_A');
 		var aButton=document.getElementsByClassName('button');
+		console.log(oIput_A)
+		console.log(aButton)
 		document.onclick=function(){
 			oIput_A.blur();             //失焦
 			oIput_A.value='';
@@ -171,7 +173,9 @@ WxStoreApp.controller('AppointcoachController', ["$rootScope","$scope","$http","
 			aButton[1].style.display="block";
 		}else{
 			aButton[0].style.display="block";
-		}
+		}*/
+		
+		$ionicNavBarDelegate.showBackButton(true);
 		
 		
 		$ionicModal.fromTemplateUrl('resources/templates/appoint-shaixuan.html', {
