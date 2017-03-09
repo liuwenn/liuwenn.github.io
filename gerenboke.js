@@ -98,8 +98,10 @@ window.onload=function(){
 	moveImg.style.left=0+'px';                        //设定球在可视区内的初始位置
 	moveImg.style.topoTextoTextoText=0+'px';
 	
-	//球慢慢变大的运动   
-	tochange(145);                                
+	//球慢慢变大的运动 
+	setTimeout(function(){
+		tochange(145);
+	},3000)
 	function tochange(mX){
 		var offsetL=moveImg.offsetLeft;       //记录球初始值位置的坐标
 		var offsetT=moveImg.offsetTop;
@@ -189,7 +191,7 @@ window.onload=function(){
 //				var oBody=document.getElementsByTagName('body')[0];
 //				console.log(oBody.scrollTop)
 				var topH=document.body.scrollTop||document.documentElement.scrollTop;
-				//console.log(topH)
+				console.log(topH)
 				if(topH>=100){
 					oNav_head.style.position='fixed';
 					oNav_head.style.zIndex='10';
@@ -927,16 +929,24 @@ window.onload=function(){
 			        b();
 			    });
 			})()
-			//加载层
-			 var hDiv= $(document).height();
-			 console.log(hDiv)
-			$('#jiaz').height(hDiv);
-			$('.loading').animate({'width':'100%'},2000);
-			setTimeout(function(){
-				$('#jiaz').height(0);
-				$('.loading').height(0);
-				//$('#jiaz').css("background","rgba(0,0,0,0.9)");
-			},2000);
-
+			
+		//进度条
+		var oZhe=$(".zhezhao");
+		var oJidu=$(".jidu");
+		var oHeight=$("body").height();
+		oZhe.height(oHeight);
+		oJidu.animate({'width':'100%'},3000)
+		setTimeout(function(){
+			oZhe.width(0);
+			oJidu.height(0);
+		},3000)
+		
+			
 			
 }
+		
+	
+		
+		
+		
+		
