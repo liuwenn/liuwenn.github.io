@@ -101,7 +101,7 @@ window.onload=function(){
 	//球慢慢变大的运动 
 	setTimeout(function(){
 		tochange(145);
-	},3000)
+	},4500)
 	function tochange(mX){
 		var offsetL=moveImg.offsetLeft;       //记录球初始值位置的坐标
 		var offsetT=moveImg.offsetTop;
@@ -910,16 +910,16 @@ window.onload=function(){
 			
 			        b();
 			
-			        $('#gotop').click(function(){
+			        $('#gotop').click(function(){    //点击回到顶部：body或者是滚动条滑动0
 			            $(document).scrollTop(0);
 			        });
 			
 			        $('#code').hover(function(){
-			            $(this).attr('id','code_hover');
+			            //$(this).attr('id','code_hover');
 			            $('#code_img').show();
-			            $('#code_img').addClass('a-fadeinL');
+			            $('#code_img').addClass('a-bounceinL');
 			        },function(){
-			            $(this).attr('id','code');
+			            //$(this).attr('id','code');
 			            $('#code_img').hide();
 			        })
 			
@@ -931,18 +931,37 @@ window.onload=function(){
 			})()
 			
 		//进度条
-		var oZhe=$(".zhezhao");
+		/*var oZhe=$(".zhezhao");
 		var oJidu=$(".jidu");
 		var oHeight=$("body").height();
 		oZhe.height(oHeight);
-		oJidu.animate({'width':'100%'},3000)
+		oJidu.animate({'width':'100%'},3000);
+		oJidu.innerHTML=$(".jidu").width();
 		setTimeout(function(){
 			oZhe.width(0);
 			oJidu.height(0);
-		},3000)
+		},3000)*/
+		var oHeight=$("body").height();
+		$(".zhezhao").height(oHeight);
+		var oJidu=document.getElementsByClassName('jidu')[0];
 		
-			
-			
+		 var bar=window.setInterval(function (){ 
+		    oJidu.style.width = parseInt(oJidu.style.width) + 1 + "%"; 
+		    oJidu.innerHTML = oJidu.style.width; 
+		    if(parseInt(oJidu.style.width) >=100){ 
+		    	window.clearInterval(bar);
+		    	 oJidu.innerHTML='100%';
+		    	setTimeout(function(){
+		    		
+			        $(".zhezhao").height(0);
+			        $(".jidu").height(0);
+			        $(".jidu").html('');
+		    	},500)
+		        
+		    } 
+		},40);
+		var oT=(0.04)*100+0.5;
+		console.log(oT)
 }
 		
 	

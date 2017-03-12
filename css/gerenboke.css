@@ -1,7 +1,7 @@
 oulAbody{background:#f0f2f6;position: relative;left: 0;top:0;transition: 1s}
 /*@keyframes lmove{0%{background: red;}20%{background: #f855f6;}40%{background: #5568f8;}60%{background: #55e3f8;}80%{background: #55f8b9;}100%{background: #5cf855;}}*/
 .zhezhao{width: 100%;position: absolute;background: rgba(0,0,0,1);z-index: 1000;}
-.jidu{height: 5px;background: red;position: fixed;top: 300px;z-index: 1000;}
+.jidu{height: 20px;background: red;position: fixed;top: 300px;z-index: 1000;text-align: center;color: white;}
 #moveImg_Box{position: fixed;z-index: 100;}
 #moveImg{position: absolute;left:0;top:0;z-index: 10000;display: none;cursor: pointer;}
 section{padding:20px 0 0 164px;}
