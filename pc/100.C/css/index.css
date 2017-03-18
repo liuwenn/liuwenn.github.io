@@ -17,7 +17,7 @@ body{font-size: 12px;}
 .logo_left,.logo_right{height:68px;line-height:68px;position: absolute;font-size:12px;top:8px}
 .logo_left{left: 8px;}
 .logo_left a{width: 66px;display: inline-block;text-align: center;cursor: pointer;}
-.logo_right a{width: 60px;display: inline-block;text-align: center;cursor: pointer;}
+.logo_right a{width: 60px;display: inline-block;text-align: center;cursor: pointer;color: #000;text-decoration: none;}
 .logo_left a:hover,.logo_right a:hover{text-decoration: underline;}
 .logo_right{right: 13px;}
 .nav{width: 958px;height: 114px;border:1px solid #dbdbdb;border-radius: 6px;position: relative;background: -webkit-linear-gradient(top,#FFFFFF,#f8f8f8);}
