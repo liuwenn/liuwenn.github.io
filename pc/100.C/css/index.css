@@ -235,6 +235,7 @@ border-bottom: 4px solid transparent;}
 .Latestjoin{border: 1px solid #dbdbdb;padding: 0 10px 8px 10px;margin-bottom: 10px;border-radius: 6px;}
 .Latestjoin h4{height: 40px;line-height: 25px;}
 .Latestjoin h4  strong{font-family: arial;font-size: 12px;color: #cc0d13;}
+.Latestjoin_ul{margin: 0 0 10px 0;}
 .Latestjoin_ul>li{width: 107px;height: 150px;}
 .Latestjoin_ul div{width:92px;height: 69px; border: 1px solid #dadada;text-align: center;}
 .Latestjoin_ul h5{height: 30px;line-height: 30px;color: #b80000;font-weight: normal;font-size: 12px;}
