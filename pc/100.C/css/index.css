@@ -46,7 +46,7 @@ body{font-size: 12px;}
 .tip_up{right:0;top: 6px; width: 0;height: 0;position: absolute;cursor: pointer; border-top: 4px solid transparent;border-left: 5px solid transparent;border-right: 4px solid transparent;border-bottom: 4px solid #cb2929;}
 .tip_down{right:0;top: 18px; width: 0;height: 0;position: absolute;cursor: pointer;border-top: 4px solid #cb2929;border-left: 5px solid transparent;border-right: 4px solid transparent;border-bottom: 4px solid transparent;}
 .content_le{width:710px;}
-.Top_left{width: 350px;box-sizing: border-box;padding: 0 15px;border:1px solid #dbdbdb}
+.Top_left{width: 350px;box-sizing: border-box;padding: 0 15px;border:1px solid #dbdbdb;border-radius: 6px 6px;}
 .Top_left .pic{width:318px;height: 302px;overflow: hidden;border-radius: 6px;margin-bottom: 13px;}
 .Top_left h1{height: 42px;line-height: 42px;color:#d90000;font-weight: normal;font-size: 18px;font-family: arial;}
 .Top_leul li{height: 20px;list-style: inside;text-indent: 14px;}
@@ -110,7 +110,7 @@ body{font-size: 12px;}
 .main_traleft ul{width: 350px; height: 34px;position: relative;}
 .main_traleft li{width: 174px;height: 34px;line-height: 34px;text-align: center;border: 1px solid #dbdbdb;border-radius: 5px 5px 0 0;
  background: -webkit-linear-gradient(top,#FFFFFF,#f8f8f8);cursor: pointer;box-sizing: border-box;z-index: 10;position: relative;}
-.main_tralcont{width: 350px;border: 1px solid #dbdbdb;position: absolute;z-index: 5;top:33px;box-sizing: border-box;}
+.main_tralcont{width: 350px;border: 1px solid #dbdbdb;position: absolute;z-index: 5;top:33px;box-sizing: border-box;border-radius: 6px 6px;}
 .on3{background:white !important;border-bottom:1px solid white !important;}
 .on4{border-top:4px solid #ca0309 !important}
 .main_tralcont div{width: 318px;height: 294px;display: none; margin: 0 auto;}
