@@ -75,20 +75,34 @@ $(document).ready(function(){
 	})	
 	
 	//点击滚动-下
+	var onOff=true;
 	$(".tip_down").on("click",function(){
-		NowT++;
-		if(NowT==$(".oUl li").length){
-			NowT=0;
+		if(onOff){
+			onOff=false;
+			NowT++;
+			if(NowT==$(".oUl li").length){
+				NowT=0;
+			}
+			$(".oUl").animate({'top':'-'+iH*NowT+'px'},500,function(){
+				onOff=true;
+			});
+			
 		}
-		$(".oUl").animate({'top':'-'+iH*NowT+'px'},500);
 	})
 	//点击滚动-上
 	$(".tip_up").on("click",function(){
-		NowT--;
-		if(NowT==-1){
-			NowT=$(".oUl li").length-1;
+		if(onOff){
+			onOff=false;
+			NowT--;
+			if(NowT==-1){
+				NowT=$(".oUl li").length-1;
+			}
+			$(".oUl").animate({'top':'-'+iH*NowT+'px'},500,function(){
+				onOff=true;
+			});
+			
 		}
-		$(".oUl").animate({'top':'-'+iH*NowT+'px'},500);
+		
 	})
 	
 	//tab选项卡2
@@ -118,6 +132,12 @@ $(document).ready(function(){
 	var iI=0;
 	$(".main_picright div").eq(iI).addClass('onborder');
 	$(".main_pic p").html(Atip[0]);
+	
+	
+	$(".main_picleft img").on("webkitAnimationEnd", function(){  //监听事件
+		$(".main_picleft img").removeClass('a-fadein');
+	});
+			
 	function go(){
 		Timer=setInterval(function(){
 			iI++;
@@ -171,7 +191,6 @@ $(document).ready(function(){
 
 
 	//bottom
-	
 	$(".main_bottomone li").eq(0).addClass('active_4');
 	$(".main_bottomul ul").eq(0).show();
 	$(".main_bottomone li").on('click',function(){
