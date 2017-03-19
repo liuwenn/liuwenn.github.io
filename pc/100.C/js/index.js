@@ -201,6 +201,7 @@ $(document).ready(function(){
 	})
 
 	//tab图片
+	$(".main_botrigul li").eq(2).addClass('active_5');
 	$(".main_botrigul li").on('mouseover',function(){
 		var index5=$(this).index(); 
 		$(this).addClass('active_5').siblings().removeClass('active_5');
