@@ -1,0 +1,16 @@
+body , h1{
+	margin: 0;
+}
+body{
+	font-size: 0;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
