@@ -5,17 +5,19 @@
 	    	<div class="tsb-icons">
 	    		<div class="tsb-ic-wrp" style="display: block;">
 					<ion-scroll direction="x" class="tsb-hscroll">
-						<a href="javascript:;"  ng-click="showCouponList(0)" style="width: 40%;">优惠券({{couponList.length}})</a>
-						<a href="javascript:;" ng-click="showCardList()" style="width: 40%;">会员卡({{cardList.length}})</a>
+						<a href="javascript:;" style="width: 40%;">优惠券({{orders.length}})</a>
+						<a href="javascript:;" style="width: 40%;">会员卡({{unSendOrders.length}})</a>
+						<!--<a href="javascript:;" >待收货({{unReceiveOrders.length}})</a>
+						<a href="javascript:;" >已收货({{receivedOrders.length}})</a>-->
 					</ion-scroll>
 				</div>
 	    	</div>
 	        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
 	            <ion-slide>
-	            	<ion-scroll style="height:100%">
-	            		<ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCoupon()"></ion-refresher>
+	            	<ion-scroll style="height:100%" >
+	            		<!--<ion-refresher pulling-text="松手刷新" on-refresh="doRefresh()"></ion-refresher>-->
 	            		<!--优惠券-->
-	            			<div style="height:30%" ng-click="Jump()" class="div_card">
+	            		<div style="height:30%" ng-click="Jump()" class="div_card">
 		            		<div class="div_cardAA">
 								<img class="card_a" src="resources/images/card-1.png" />
 								<!--<img class="card_money" src="resources/images/card-2.png" />-->
@@ -135,12 +137,12 @@
 								</ul>
 							</div>
 						</div>
-						<p ng-click="onCreate()" style="margin: 10% 0 0 0;font-size: 12px;height: 20%; text-decoration: underline;cursor: pointer;color: #aaa;">查看历史优惠券</p>
+						<p style="margin: 10% 0 0 0;font-size: 12px;height: 20%; text-decoration: underline;cursor: pointer;color: #aaa;">查看历史优惠券</p>
 	                </ion-scroll>
 	            </ion-slide>
 	            <ion-slide style="background: #FFFFFF;">
 	           	 	<ion-scroll style="height:100%">
-		                <ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCard()"></ion-refresher>
+		                <!--<ion-refresher pulling-text="松手刷新" on-refresh="doRefresh()"></ion-refresher>-->
 							<div class="list card" style=" width:75%;margin: 5% auto;border: none; box-shadow: none;" ng-click="Jump_A()">
 								<p style="position: absolute;top: 19%;left: 50%;font-size: 20px;color: white">易特商城<p>
 								<ul class="card_vip" style="position: absolute;top:44%;left: 46%;width: 41%;">
