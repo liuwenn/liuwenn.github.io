@@ -187,6 +187,7 @@ WxStoreApp.config(["$httpProvider","$stateProvider","$urlRouterProvider","$ionic
 	    //卡券2
 	    .state('tabs.Card', {
 	      url: "/Card",
+	      cache:'false', 
 	      views: {
 	        'Card-tab': {
 	          templateUrl: "resources/templates/Card.html",

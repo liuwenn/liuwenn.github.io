@@ -3,7 +3,6 @@
 
 WxStoreApp.controller('AppointMentController', ["$scope","$location","$http","$rootScope",
     function($scope,$location,$http,$rootScope) {
-	
 	//产品列表
 	$scope.showMerchantGoodList = function(status) {
 	     $http.get('merchantGoods/merchantGoodsList.json').success(function(couponList){
@@ -30,5 +29,6 @@ WxStoreApp.controller('AppointMentController', ["$scope","$location","$http","$r
 	$scope.tiaocoach=function(coupon){
 		var goodsCode= parseInt(coupon.goodsCode);
 		$location.url("tab/Appointcoach?id="+goodsCode);  /*跳转*/
+		 //$location.path('/validation').replace();
 	}
    }]);

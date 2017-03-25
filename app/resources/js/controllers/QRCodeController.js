@@ -55,6 +55,7 @@ WxStoreApp.controller('QRCodeController', ["$rootScope","$scope","$http","$locat
    	         }).error(function(data, status, headers, config) {
    	 	       	 //$rootScope.wxstore.showError(data);
    	         });
+   	         
    	     };
    	     
    	  $scope.showQRCode();   	  
