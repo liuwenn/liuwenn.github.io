@@ -149,11 +149,11 @@ WxStoreApp.controller('CardDetailsController', ["$rootScope","$scope","$location
 		}
 		
 		
-		 //下拉刷新优惠券
+	/*	 //下拉刷新优惠券
 	    $scope.doRefreshCoupon = function() {	 
-	    	$scope.showCouponList(0);
+	    	//$scope.showCouponList(0);
 	        $scope.$broadcast('scroll.refreshComplete');
-		};
+		};*/
 		
 		//初始化过期优惠券弹出窗
 		$ionicModal.fromTemplateUrl('resources/templates/my-Coupon-Used.html', {
