@@ -155,6 +155,7 @@ WxStoreApp.config(["$httpProvider","$stateProvider","$urlRouterProvider","$ionic
 	        }
 	      }
 	    })
+	    /* //卡券
 	    .state('tabs.cart', {
 	      url: "/Cart",
 	      cache:'false', 
@@ -182,12 +183,12 @@ WxStoreApp.config(["$httpProvider","$stateProvider","$urlRouterProvider","$ionic
 			     controller: 'OrderConfirmController'
 	        }
 	      }
-	    })
-	    //卡券
+	    })*/
+	    //卡券2
 	    .state('tabs.Card', {
 	      url: "/Card",
 	      views: {
-	        'orders-tab': {
+	        'Card-tab': {
 	          templateUrl: "resources/templates/Card.html",
 	          controller: 'CardDetailsController'
 	        }
@@ -197,12 +198,49 @@ WxStoreApp.config(["$httpProvider","$stateProvider","$urlRouterProvider","$ionic
 	    .state('tabs.orderGoodsDetail', {
 		      url: "/OrderGoodsDetail/:goodsId",
 		      views: {
-		        'orders-tab': {
+		        'Card-tab': {
 		          templateUrl: "resources/templates/cart-goods-detail.html",
 		          controller: 'CartGoodsDetailController'
 		        }
 		      }
 		 })
+	    
+	     //优惠券详情
+	    .state('tabs.CardCouponDetails', {
+	      url: "/CardCouponDetails",
+	      views: {
+	        'Card-tab': {
+	          templateUrl: "resources/templates/Card-Coupon-Details.html",
+	        }
+	      }
+	    })
+	    //会员卡详情
+	    .state('tabs.CardMembershipDetails', {
+	      url: "/CardMembershipDetails",
+	      views: {
+	        'Card-tab': {
+	          templateUrl: "resources/templates/Card-Membership-Details.html",
+	        }
+	      }
+	    })
+	    //优惠券详情说明
+	    .state('tabs.CardCouponDescription', {
+	      url: "/CardCouponDescription",
+	      views: {
+	        'Card-tab': {
+	          templateUrl: "resources/templates/Card-Coupon-Description.html",
+	        }
+	      }
+	    })
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 	    .state('tabs.myCenter', {
 	      url: "/MyCenter",
        		cache:'false', 

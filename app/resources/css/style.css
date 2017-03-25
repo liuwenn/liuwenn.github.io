@@ -296,3 +296,5 @@ If using vanilla CSS, replace $tabs-height with the height of your bar.
 /*我选中的时间段   */
 .span_p span{display: inline-block;color: #ADADAD; border: 1px dotted #D35605;margin: 0 5px 6px 3px;border-radius: 6px;font-size: 12px;}
 .span_p span{text-align: center;width: 30%;}
+/*卡卷*/
+.div_card{margin-bottom: -12px;}

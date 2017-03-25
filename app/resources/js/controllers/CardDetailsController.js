@@ -8,7 +8,7 @@ WxStoreApp.controller('CardDetailsController', ["$rootScope","$scope","$location
 	function($rootScope,$scope, $location,$http,$ionicModal) {
 		
 		//优惠券列表
-		$scope.showCouponList = function(status) {
+/*		$scope.showCouponList = function(status) {
 			console.log(status)
 			var param ={};
 			param.status = status;
@@ -27,7 +27,7 @@ WxStoreApp.controller('CardDetailsController', ["$rootScope","$scope","$location
 		 	       	 //$rootScope.wxstore.showError(data);
 		         });
 		     };
-		$scope.showCouponList(0);
+		//$scope.showCouponList(0);
 		
 		 //下拉刷新优惠券
 	    $scope.doRefreshCoupon = function() {	 
@@ -133,10 +133,53 @@ WxStoreApp.controller('CardDetailsController', ["$rootScope","$scope","$location
 	    	}
 			$scope.cardQRInfo = "卡名："+card.cardName+",卡号："+card.cardNum+",卡类型："+(card.type==0?"普通卡":"次数卡")+",有效期："+new Date(card.startTime).Format("yyyy-MM-dd")+"至"+new Date(card.endTime).Format("yyyy-MM-dd");
 			$scope.cardQRModal.show();				    
-		}
+		}*/
 		
 		//关闭会员卡二维码弹出窗
 		$scope.closeCardQRModal = function(){
 		    $scope.cardQRModal.hide();
 		}
+		//跳转到优惠劵
+		$scope.Jump=function(){
+			$location.url("tab/CardCouponDetails");
+		}
+		//跳转到会员卡
+		$scope.Jump_A=function(){
+			$location.url("tab/CardMembershipDetails");
+		}
+		
+		
+		 //下拉刷新优惠券
+	    $scope.doRefreshCoupon = function() {	 
+	    	$scope.showCouponList(0);
+	        $scope.$broadcast('scroll.refreshComplete');
+		};
+		
+		//初始化过期优惠券弹出窗
+		$ionicModal.fromTemplateUrl('resources/templates/my-Coupon-Used.html', {
+	        scope: $scope,
+	        animation: 'slide-in-up'
+	    }).then(function(modal) {
+	        $scope.couponMdel = modal;
+	    });
+		
+		//打开过期优惠券弹出窗
+		$scope.onCreate = function(){
+			//$scope.showCouponList(1);	
+			$scope.couponMdel.show();				    
+		}
+		
+		//关闭过期优惠券弹出窗
+		$scope.closeModal = function(){
+		    $scope.couponMdel.hide();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }]);
