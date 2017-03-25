@@ -15,42 +15,137 @@
 	            	<ion-scroll style="height:100%">
 	            		<ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCoupon()"></ion-refresher>
 	            		<!--优惠券-->
-	            			<div ng-repeat="coupon in couponList" style="height:30%;margin-bottom: -4%;">
-			            		<div class="div_cardAA" >
-									<img class="card_a" src="resources/images/card-1.png" />
-									<div class="card_money" style="color: #fe523f;">
-										
-										<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%" ng-if="coupon.type == 1">￥</em>
-										<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%" ng-if="coupon.type == 0">折</em>
-										<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">{{coupon.discount}}</span>
-									</div>
-									<span class="card_line"></span>
-									<span class="card_linebottom"></span>
-									<ul class="card_ulAA">
-										<li style="font-size: 16px;font-weight: bold;color: #000000;">{{coupon.name}}</li>
-										<li>满{{coupon.maxPrice}}元可用</li>
-										<li>{{coupon.startTime | dateFormatFilter}}至{{coupon.endTime | dateFormatFilter}}</li>
-									</ul>	
+	            			<div style="height:30%" ng-click="Jump()" class="div_card">
+		            		<div class="div_cardAA">
+								<img class="card_a" src="resources/images/card-1.png" />
+								<!--<img class="card_money" src="resources/images/card-2.png" />-->
+								<div class="card_money" style="color: #fe523f;">
+									<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%">￥</em>
+									<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">2</span>
+									<span style="font-size:16px; font-weight: 700;position: absolute;top:38%;left: 67%;">.0</span>
 								</div>
-								<div class="div_cardBB">
-									<ul class="card_ulBB">
-										<li>{{coupon.decribe}}</li>
-									</ul>
-								</div>
+								<span class="card_line"></span>
+								<span class="card_linebottom"></span>
+								<ul class="card_ulAA">
+									<li style="font-size: 16px;font-weight: bold;color: #000000;">天降红包</li>
+									<li>满16元可用</li>
+									<li>2016-06-03至2016-06-03</li>
+								</ul>	
 							</div>
-							<p ng-click="onCreate()" style="font-size:12px;height: 20%; text-decoration:underline;margin-top:5%;color:#aaa">查看历史优惠券</p>
+							<div class="div_cardBB">
+								<ul class="card_ulBB">
+									<li>限甜品饮品品类商家使用</li>
+									<li>限每天14:00-17:00使用</li>
+								</ul>
+							</div>
+						</div>
+						<div style="height:30%" ng-click="Jump()" class="div_card">
+		            		<div class="div_cardAA">
+								<img class="card_a" src="resources/images/card-1.png" />
+								<!--<img class="card_money" src="resources/images/card-2.png" />-->
+								<div class="card_money" style="color: #fe523f;">
+									<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%">￥</em>
+									<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">2</span>
+									<span style="font-size:16px; font-weight: 700;position: absolute;top:38%;left: 67%;">.0</span>
+								</div>
+								<span class="card_line"></span>
+								<span class="card_linebottom"></span>
+								<ul class="card_ulAA">
+									<li style="font-size: 16px;font-weight: bold;color: #000000;">天降红包</li>
+									<li>满16元可用</li>
+									<li>2016-06-03至2016-06-03</li>
+								</ul>	
+							</div>
+							<div class="div_cardBB">
+								<ul class="card_ulBB">
+									<li>限甜品饮品品类商家使用</li>
+									<li>限每天14:00-17:00使用</li>
+								</ul>
+							</div>
+						</div>
+						<div style="height:30%" ng-click="Jump()" class="div_card">
+		            		<div class="div_cardAA">
+								<img class="card_a" src="resources/images/card-1.png" />
+								<!--<img class="card_money" src="resources/images/card-2.png" />-->
+								<div class="card_money" style="color: #fe523f;">
+									<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%">￥</em>
+									<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">2</span>
+									<span style="font-size:16px; font-weight: 700;position: absolute;top:38%;left: 67%;">.0</span>
+								</div>
+								<span class="card_line"></span>
+								<span class="card_linebottom"></span>
+								<ul class="card_ulAA">
+									<li style="font-size: 16px;font-weight: bold;color: #000000;">天降红包</li>
+									<li>满16元可用</li>
+									<li>2016-06-03至2016-06-03</li>
+								</ul>	
+							</div>
+							<div class="div_cardBB">
+								<ul class="card_ulBB">
+									<li>限甜品饮品品类商家使用</li>
+									<li>限每天14:00-17:00使用</li>
+								</ul>
+							</div>
+						</div>
+						<div style="height:30%" ng-click="Jump()" class="div_card">
+		            		<div class="div_cardAA">
+								<img class="card_a" src="resources/images/card-1.png" />
+								<!--<img class="card_money" src="resources/images/card-2.png" />-->
+								<div class="card_money" style="color: #fe523f;">
+									<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%">￥</em>
+									<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">2</span>
+									<span style="font-size:16px; font-weight: 700;position: absolute;top:38%;left: 67%;">.0</span>
+								</div>
+								<span class="card_line"></span>
+								<span class="card_linebottom"></span>
+								<ul class="card_ulAA">
+									<li style="font-size: 16px;font-weight: bold;color: #000000;">天降红包</li>
+									<li>满16元可用</li>
+									<li>2016-06-03至2016-06-03</li>
+								</ul>	
+							</div>
+							<div class="div_cardBB">
+								<ul class="card_ulBB">
+									<li>限甜品饮品品类商家使用</li>
+									<li>限每天14:00-17:00使用</li>
+								</ul>
+							</div>
+						</div>
+						<div style="height:30%" ng-click="Jump()" class="div_card">
+		            		<div class="div_cardAA">
+								<img class="card_a" src="resources/images/card-1.png" />
+								<!--<img class="card_money" src="resources/images/card-2.png" />-->
+								<div class="card_money" style="color: #fe523f;">
+									<em style="font-size: 12px;font-weight: 600;position: absolute;left: 6%;top:36%">￥</em>
+									<span style="font-size:41px;font-weight: 700;position: absolute;top:11%;left: 35%;">2</span>
+									<span style="font-size:16px; font-weight: 700;position: absolute;top:38%;left: 67%;">.0</span>
+								</div>
+								<span class="card_line"></span>
+								<span class="card_linebottom"></span>
+								<ul class="card_ulAA">
+									<li style="font-size: 16px;font-weight: bold;color: #000000;">天降红包</li>
+									<li>满16元可用</li>
+									<li>2016-06-03至2016-06-03</li>
+								</ul>	
+							</div>
+							<div class="div_cardBB">
+								<ul class="card_ulBB">
+									<li>限甜品饮品品类商家使用</li>
+									<li>限每天14:00-17:00使用</li>
+								</ul>
+							</div>
+						</div>
+						<p ng-click="onCreate()" style="margin: 10% 0 0 0;font-size: 12px;height: 20%; text-decoration: underline;cursor: pointer;color: #aaa;">查看历史优惠券</p>
 	                </ion-scroll>
 	            </ion-slide>
 	            <ion-slide style="background: #FFFFFF;">
 	           	 	<ion-scroll style="height:100%">
 		                <ion-refresher pulling-text="松手刷新" on-refresh="doRefreshCard()"></ion-refresher>
-							<div class="list card" ng-repeat="card in cardList" style=" width:75%;margin: 0 auto;border: none; box-shadow: none;" ng-click="openCardModal(card)">
-								<p style="position: absolute;top: 5%;left: 32%;font-size: 16px;color: white;margin: 8% 0 0 0;">{{card.cardName}}<p>
-								<ul class="card_vip" style="position: absolute;top:35%;left: 36%;width: 58%;">
-									<li><em style="font-size: 30px;color: white;font-weight: bold;">VIP</em><span style="color: white;margin-left: 7%;font-size: 12px;width: 100%;">{{card.type | cardTypeFilter}}</span></li>
-									<li style="font-size: 12px;color: white;margin: 0 0 0 -16%;">开始时间：{{card.startTime | dateFormatFilter}}</li>
-									<li style="font-size: 12px;color: white;margin: 0 0 0 -16%;line-height: 14px;">结束时间：{{card.endTime | dateFormatFilter }}</li>
-									<li style="font-size: 12px;color: white;margin: 0 0 0 -41%;">NO.{{card.cardNum}}</li>
+							<div class="list card" style=" width:75%;margin: 5% auto;border: none; box-shadow: none;" ng-click="Jump_A()">
+								<p style="position: absolute;top: 19%;left: 50%;font-size: 20px;color: white">易特商城<p>
+								<ul class="card_vip" style="position: absolute;top:44%;left: 46%;width: 41%;">
+									<li><em style="font-size: 30px;color: white;font-weight: bold;">VIP</em><span style="color: white;margin-left: 7%;font-size: 12px;">会员卡</span></li>
+									<li style="font-size: 12px;color: white;margin: 9% 0 0 15%;">NO.00008888</li>
 								</ul>
 							 	<img class="full-image" src="resources/images/card-A.png" style="margin-top: 2%;">
 							</div>
