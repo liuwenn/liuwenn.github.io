@@ -100,7 +100,7 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
 	     
 	     $scope.datepickerObject = {
 	         titleLabel: '预约时段',  //Optional
-	        todayLabel: '今天',  //Optional
+	        todayLabel: ' ',  //Optional
 	         closeLabel: '取消',  //Optional
 	         setLabel: '确定预约',  //Optional
 	         setButtonType: 'button-balanced',  //Optional
@@ -189,11 +189,11 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
 					console.log(arrSpan2)   //要的就是你
                    $scope.closemodal3 = function() {
                         //预约预览 左nav
-						$scope.secondCtrl(date)
-						console.log(date)
+						/*$scope.secondCtrl(date)
+						console.log(date)*/
                         var oyuxuan_left = document.getElementsByClassName('xuanzhong_left')[0];
                         var oDiv = document.createElement('div');
-                        oDiv.innerHTML = $scope.myDate.year + '年' + ($scope.myDate.month + 1) + '月' + $scope.myDate.date + '日';
+                        oDiv.innerHTML = dateObj.year + '年' + (dateObj.month + 1) + '月' + dateObj.date + '日';
                         oyuxuan_left.appendChild(oDiv);
                         var oDate_timer = document.getElementsByClassName('Date_timer')[0];
                         var aCol = oDate_timer.getElementsByClassName('col');
@@ -204,20 +204,39 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
                         for (var j = 0; j < arrSpan.length; j++) {
                             var oDiv2 = document.createElement('div');
                             oyuxuan_right.appendChild(oDiv2);
-                            oDiv2.innerHTML = arrSpan[j] + ",";
+                            oDiv2.innerHTML ="&nbsp;&nbsp;"+ arrSpan[j] + "&nbsp;";
                             //console.log(arrSpan[j])
                             oDiv2.style.display = "inline-block";
                         }
                         $scope.modal3.hide();
                         
+                         $scope.setIonicDatePickerDate=function (){
+                         	alert(2)
+                         	setTimeout(function(){
+                         		alert(1)
+                        		$location.url("tab/MyCenter");
+                        	},1000)
+                        	if(oDiv2.innerText){
+                        		$rootScope.wxstore.showAlert("提交成功！");
+                        		oyuxuan_right.innerHTML='';
+                        		oyuxuan_left.innerHTML=" ";
+                        	}else{
+                        		$rootScope.wxstore.showAlert("请选择时段！");
+                        	}
+                        	
+                        	
+                        }
+                        
+                        
+                        
                     }
                 }
                 
             }
-            
+             //var ovalright=$(".oyuxuan_right").html();
             
         }
-
+		
         //数组去重
         function removal(arr) {
             for (var i = 0; i < arr.length; i++) {
@@ -244,14 +263,14 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
         }
 
         //关闭CreateAddress Model Window
-        $scope.closemodel3 = function() {
+/*        $scope.closemodel3 = function() {
             $scope.modal3.hide();
-        }
-		$scope.changemyDate=function(date){
+        }*/
+/*		$scope.changemyDate=function(date){
 			$scope.myDate=date;
 			console.log($scope.myDate)
 		}
-	     
+	     */
 	     
 	     
 	     

@@ -259,7 +259,7 @@ If using vanilla CSS, replace $tabs-height with the height of your bar.
 .xuanzhong{width: 100%;background: #eeeeee;overflow: hidden;}
 .xuanzhong_left{width: 30%;float: left;height: 200px;background: #ffffff;}
 .xuanzhong_right{width: 70%;float: right;height: 200px;background: white;}
-.xuanzhong_left div{width: 100%;height: 20%;background: blue;float: left;}
+.xuanzhong_left div{width: 100%;height: 20%;background: #D9D9D9;float: left;}
 .xuanzhong_left div{font-size: 12px; color: white;}
 .xuanzhong_right div{display: none;}
 
