@@ -101,7 +101,7 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
 	     $scope.datepickerObject = {
 	         titleLabel: '预约时段',  //Optional
 	        todayLabel: ' ',  //Optional
-	         closeLabel: '取消',  //Optional
+	         closeLabel: '关闭',  //Optional
 	         setLabel: '确定预约',  //Optional
 	         setButtonType: 'button-balanced',  //Optional
 	         todayButtonType: 'button-balanced',  //Optional
@@ -211,9 +211,7 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
                         $scope.modal3.hide();
                         
                          $scope.setIonicDatePickerDate=function (){
-                         	alert(2)
                          	setTimeout(function(){
-                         		alert(1)
                         		$location.url("tab/MyCenter");
                         	},1000)
                         	if(oDiv2.innerText){
