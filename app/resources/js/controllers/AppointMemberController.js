@@ -146,7 +146,7 @@ WxStoreApp.controller('AppointMemberController', ["$rootScope","$scope","$http",
         });
         //打开CreateAddress Model Window
         var arr_coach=[15,21,25];
-        var astr2=[4];
+        var astr2=[6];
         $scope.showmodel3 = function(dateObj,currentMonth) {
         	console.log(dateObj);
         	var aCol=$(".Date_timer .date_cell");  //当月所有表格集合
