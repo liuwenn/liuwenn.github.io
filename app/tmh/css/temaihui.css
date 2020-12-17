@@ -38,7 +38,7 @@ body{
 	margin: 0.8rem 0 0 1.15rem;
 	background-size:10rem;
 }
-#head_down{width: 16rem;height:6.5rem;background: red;position: relative;overflow: hidden;}
+#head_down{width: 16rem;height:6.5rem;position: relative;overflow: hidden;}
 #oul{position: absolute;left: 0;font-size: 0;}
 #oul li{width: 16rem;height: 10rem;float: left;list-style: none;}
 #head_down img{
