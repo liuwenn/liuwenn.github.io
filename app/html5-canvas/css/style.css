@@ -72,6 +72,7 @@ body,
   bottom: 5%;
   width: 300px;
   margin-left: -150px;
+  display: none;
 }
 
 .ui-input {
@@ -119,6 +120,7 @@ body,
 }
 
 .help {
+  display: none;
   position: absolute;
   top: 40px;
   right: 40px;
