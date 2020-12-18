@@ -107,11 +107,21 @@ S.UI = (function () {
       cmd = '#';
 
   function formatTime(date) {
-    var h = date.getHours(),
+    var y = date.getFullYear(),
+        M = date.getMonth()+1,
+        d = date.getDate(),
+        h = date.getHours(),
         m = date.getMinutes(),
     m = m < 10 ? '0' + m : m;
-    return h + ':' + m;
+    // return add0(h) + ':' + add0(m);
+    return add0(y)+'-'+add0(M)+'-'+add0(d);
   }
+  function add0(time){
+    if(time<10){
+          time = ""+"0"+time;
+     }
+    return time;
+   }
 
   function getValue(value) {
     return value && value.split(' ')[1];
