@@ -436,7 +436,7 @@ window.onload = function () {
           oUl.style.display = 'block';
           oUl.innerHTML = '';
           for (var i = 0; i < arr.length; i++) {
-            oUl.innerHTML += '<li><a target="_blank"  href="http://www.baidu.com/s?wd=' + arr[i] + '">' + arr[i] + '</a></li>';             //赋值
+            oUl.innerHTML += '<li><a target="_blank"  href="https://www.baidu.com/s?wd=' + arr[i] + '">' + arr[i] + '</a></li>';             //赋值
           }  //新建窗口打开                                Li里的链接地址
 
         } else {
@@ -450,7 +450,7 @@ window.onload = function () {
           var aLi = oUl.getElementsByTagName('li');
           iCode = ev.keyCode;
           if (ev.keyCode == 13 && oText.value) {
-            window.open(href = "http://www.baidu.com/s?wd=" + oText.value)
+            window.open(href = "https://www.baidu.com/s?wd=" + oText.value)
           }
           if (ev.keyCode == 40) {
             if (Num == aLi.length) {
@@ -529,7 +529,7 @@ window.onload = function () {
       function Seach() {
         soso.onclick = function () {
           if (oText.value) {
-            window.open(href = "http://www.baidu.com/s?wd=" + oText.value)
+            window.open(href = "https://www.baidu.com/s?wd=" + oText.value)
           } else {
             alert('您输入的为空!!!')
           }
