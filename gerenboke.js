@@ -1,6 +1,6 @@
 window.onload = function () {
-  var oHeight = $("body").height();
-  $(".zhezhao").height(oHeight);
+  // var oHeight = $("body").height();
+  // $(".zhezhao").height(oHeight);
   var oJidu = document.getElementsByClassName('jidu')[0];
   var bar = window.setInterval(function () {
     oJidu.style.width = parseInt(oJidu.style.width) + 1 + "%";
@@ -20,6 +20,8 @@ window.onload = function () {
   var oT = (40) * 100 + 500;
 
   setTimeout(function () {
+    var blclassH = document.getElementById('blclass');
+    blclassH.style.display = 'block';
     (function () {
       var Nav2 = document.getElementById('nav2_left11')
       var Navleft = document.getElementById('nav2_leftt')
