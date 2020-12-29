@@ -519,7 +519,7 @@ window.onload = function () {
           oText.focus();
           var oScr = document.createElement('script');
           document.body.appendChild(oScr);
-          oScr.src = 'http://suggestion.baidu.com/su?wd=' + this.value + '&json=1&p=3&cb=fn1';  //百度接口 1.txt fn1(ddfdf)
+          oScr.src = 'https://suggestion.baidu.com/su?wd=' + this.value + '&json=1&p=3&cb=fn1';  //百度接口 1.txt fn1(ddfdf)
           document.body.removeChild(oScr);  //清除所创建的script
         } else {
           oUl.style.display = 'none';                            //没输入值时不存在，否者按任意键抬起时都能触发创建
