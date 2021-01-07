@@ -944,6 +944,7 @@ window.onload = function () {
           $('#code_img').addClass('a-bounceinL');
         }, function () {
           //$(this).attr('id','code');
+          //$('#code_img').removeClass('a-bounceinL');
           $('#code_img').hide();
         })
 

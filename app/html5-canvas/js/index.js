@@ -16,7 +16,7 @@
 var S = {
   init: function () {
     var action = window.location.href,
-        i = action.indexOf('?a=');
+      i = action.indexOf('?a=');
 
     S.Drawing.init('.canvas');
     document.body.classList.add('body--ready');
@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('爱|你|哟|#rectangle|#countdown 3|#time');
+      S.UI.simulate('张|梓|潼||可||以||哟|#rectangle|#countdown 3|#time');
     }
 
     S.Drawing.loop(function () {
@@ -36,16 +36,16 @@ var S = {
 
 S.Drawing = (function () {
   var canvas,
-      context,
-      renderFn
-      requestFrame = window.requestAnimationFrame       ||
-                     window.webkitRequestAnimationFrame ||
-                     window.mozRequestAnimationFrame    ||
-                     window.oRequestAnimationFrame      ||
-                     window.msRequestAnimationFrame     ||
-                     function(callback) {
-                       window.setTimeout(callback, 1000 / 60);
-                     };
+    context,
+    renderFn
+  requestFrame = window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function (callback) {
+      window.setTimeout(callback, 1000 / 60);
+    };
 
   return {
     init: function (el) {
@@ -91,37 +91,37 @@ S.Drawing = (function () {
 
 S.UI = (function () {
   var input = document.querySelector('.ui-input'),
-      ui = document.querySelector('.ui'),
-      help = document.querySelector('.help'),
-      commands = document.querySelector('.commands'),
-      overlay = document.querySelector('.overlay'),
-      canvas = document.querySelector('.canvas'),
-      interval,
-      isTouch = false, //('ontouchstart' in window || navigator.msMaxTouchPoints),
-      currentAction,
-      resizeTimer,
-      time,
-      maxShapeSize = 30,
-      firstAction = true,
-      sequence = [],
-      cmd = '#';
+    ui = document.querySelector('.ui'),
+    help = document.querySelector('.help'),
+    commands = document.querySelector('.commands'),
+    overlay = document.querySelector('.overlay'),
+    canvas = document.querySelector('.canvas'),
+    interval,
+    isTouch = false, //('ontouchstart' in window || navigator.msMaxTouchPoints),
+    currentAction,
+    resizeTimer,
+    time,
+    maxShapeSize = 30,
+    firstAction = true,
+    sequence = [],
+    cmd = '#';
 
   function formatTime(date) {
     var y = date.getFullYear(),
-        M = date.getMonth()+1,
-        d = date.getDate(),
-        h = date.getHours(),
-        m = date.getMinutes(),
-    m = m < 10 ? '0' + m : m;
+      M = date.getMonth() + 1,
+      d = date.getDate(),
+      h = date.getHours(),
+      m = date.getMinutes(),
+      m = m < 10 ? '0' + m : m;
     // return add0(h) + ':' + add0(m);
-    return add0(y)+'-'+add0(M)+'-'+add0(d);
+    return add0(y) + '-' + add0(M) + '-' + add0(d);
   }
-  function add0(time){
-    if(time<10){
-          time = ""+"0"+time;
-     }
+  function add0(time) {
+    if (time < 10) {
+      time = "" + "0" + time;
+    }
     return time;
-   }
+  }
 
   function getValue(value) {
     return value && value.split(' ')[1];
@@ -158,11 +158,11 @@ S.UI = (function () {
 
   function performAction(value) {
     var action,
-        value,
-        current;
+      value,
+      current;
 
     overlay.classList.remove('overlay--visible');
-    sequence = typeof(value) === 'object' ? value : sequence.concat(value.split('|'));
+    sequence = typeof (value) === 'object' ? value : sequence.concat(value.split('|'));
     input.value = '';
     checkInputWidth();
 
@@ -260,11 +260,11 @@ S.UI = (function () {
 
     commands.addEventListener('click', function (e) {
       var el,
-          info,
-          demo,
-          tab,
-          active,
-          url;
+        info,
+        demo,
+        tab,
+        active,
+        url;
 
       if (e.target.classList.contains('commands-item')) {
         el = e.target;
@@ -318,9 +318,9 @@ S.UI = (function () {
 
 S.UI.Tabs = (function () {
   var tabs = document.querySelector('.tabs'),
-      labels = document.querySelector('.tabs-labels'),
-      triggers = document.querySelectorAll('.tabs-label'),
-      panels = document.querySelectorAll('.tabs-panel');
+    labels = document.querySelector('.tabs-labels'),
+    triggers = document.querySelectorAll('.tabs-label'),
+    panels = document.querySelectorAll('.tabs-panel');
 
   function activate(i) {
     triggers[i].classList.add('tabs-label--active');
@@ -330,7 +330,7 @@ S.UI.Tabs = (function () {
   function bindEvents() {
     labels.addEventListener('click', function (e) {
       var el = e.target,
-          index;
+        index;
 
       if (el.classList.contains('tabs-label')) {
         for (var t = 0; t < triggers.length; t++) {
@@ -375,7 +375,7 @@ S.Color = function (r, g, b, a) {
 
 S.Color.prototype = {
   render: function () {
-    return 'rgba(' + this.r + ',' +  + this.g + ',' + this.b + ',' + this.a + ')';
+    return 'rgba(' + this.r + ',' + + this.g + ',' + this.b + ',' + this.a + ')';
   }
 };
 
@@ -416,10 +416,10 @@ S.Dot.prototype = {
 
   _moveTowards: function (n) {
     var details = this.distanceTo(n, true),
-        dx = details[0],
-        dy = details[1],
-        d = details[2],
-        e = this.e * d;
+      dx = details[0],
+      dy = details[1],
+      d = details[2],
+      e = this.e * d;
 
     if (this.p.h === -1) {
       this.p.x = n.x;
@@ -472,8 +472,8 @@ S.Dot.prototype = {
 
   distanceTo: function (n, details) {
     var dx = this.p.x - n.x,
-        dy = this.p.y - n.y,
-        d = Math.sqrt(dx * dx + dy * dy);
+      dy = this.p.y - n.y,
+      d = Math.sqrt(dx * dx + dy * dy);
 
     return details ? [dx, dy, d] : d;
   },
@@ -493,10 +493,10 @@ S.Dot.prototype = {
 
 S.ShapeBuilder = (function () {
   var gap = 13,
-      shapeCanvas = document.createElement('canvas'),
-      shapeContext = shapeCanvas.getContext('2d'),
-      fontSize = 500,
-      fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
+    shapeCanvas = document.createElement('canvas'),
+    shapeContext = shapeCanvas.getContext('2d'),
+    fontSize = 500,
+    fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
 
   function fit() {
     shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
@@ -508,14 +508,14 @@ S.ShapeBuilder = (function () {
 
   function processCanvas() {
     var pixels = shapeContext.getImageData(0, 0, shapeCanvas.width, shapeCanvas.height).data;
-        dots = [],
-        pixels,
-        x = 0,
-        y = 0,
-        fx = shapeCanvas.width,
-        fy = shapeCanvas.height,
-        w = 0,
-        h = 0;
+    dots = [],
+      pixels,
+      x = 0,
+      y = 0,
+      fx = shapeCanvas.width,
+      fy = shapeCanvas.height,
+      w = 0,
+      h = 0;
 
     for (var p = 0; p < pixels.length; p += (4 * gap)) {
       if (pixels[p + 3] > 0) {
@@ -561,7 +561,7 @@ S.ShapeBuilder = (function () {
   return {
     imageFile: function (url, callback) {
       var image = new Image(),
-          a = S.Drawing.getArea();
+        a = S.Drawing.getArea();
 
       image.onload = function () {
         shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
@@ -592,8 +592,8 @@ S.ShapeBuilder = (function () {
 
       setFontSize(fontSize);
       s = Math.min(fontSize,
-                  (shapeCanvas.width / shapeContext.measureText(l).width) * 0.8 * fontSize, 
-                  (shapeCanvas.height / fontSize) * (isNumber(l) ? 1 : 0.45) * fontSize);
+        (shapeCanvas.width / shapeContext.measureText(l).width) * 0.8 * fontSize,
+        (shapeCanvas.height / fontSize) * (isNumber(l) ? 1 : 0.45) * fontSize);
       setFontSize(s);
 
       shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
@@ -604,8 +604,8 @@ S.ShapeBuilder = (function () {
 
     rectangle: function (w, h) {
       var dots = [],
-          width = gap * w,
-          height = gap * h;
+        width = gap * w,
+        height = gap * h;
 
       for (var y = 0; y < height; y += gap) {
         for (var x = 0; x < width; x += gap) {
@@ -624,10 +624,10 @@ S.ShapeBuilder = (function () {
 
 S.Shape = (function () {
   var dots = [],
-      width = 0,
-      height = 0,
-      cx = 0,
-      cy = 0;
+    width = 0,
+    height = 0,
+    cx = 0,
+    cy = 0;
 
   function compensate() {
     var a = S.Drawing.getArea();
@@ -652,7 +652,7 @@ S.Shape = (function () {
 
     switchShape: function (n, fast) {
       var size,
-          a = S.Drawing.getArea();
+        a = S.Drawing.getArea();
 
       width = n.w;
       height = n.h;
@@ -667,7 +667,7 @@ S.Shape = (function () {
       }
 
       var d = 0,
-          i = 0;
+        i = 0;
 
       while (n.dots.length > 0) {
         i = Math.floor(Math.random() * n.dots.length);
@@ -709,7 +709,7 @@ S.Shape = (function () {
 
           dots[i].s = false;
           dots[i].e = 0.04;
-          dots[i].move(new S.Point({ 
+          dots[i].move(new S.Point({
             x: Math.random() * a.w,
             y: Math.random() * a.h,
             a: 0.3, //.4
