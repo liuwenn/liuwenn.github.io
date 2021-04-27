@@ -1,201 +1,215 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">-->
-    <title></title>
-		<link rel="stylesheet" href="css/temaihui.css" />
-		<link rel="stylesheet" href="css/reset.css" />
-		<!--[if IE ]>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">-->
+  <title></title>
+  <link rel="stylesheet" href="css/temaihui.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <!--[if IE ]>
 		<link rel="stylesheet" href="fixIE.css"/>
     	<script src="js/html5shiv.js"></script>
 		<script src="js/DD_belatedPNG_0.0.8a.js"></script>
     	<![endif]-->
-		
-		<!--<style type="text/css">
+
+  <!--<style type="text/css">
 			*{margin: 0;padding: 0;}
 			#head_down{width: 16rem;height:10rem;background: red;position: relative;overflow: hidden;}
 			#oul{position: absolute;left: 0;font-size: 0;}
 			#oul li{width: 16rem;height: 10rem;float: left;list-style: none;}
 		</style>-->
-		<!--设置初始比例（1：1像素还原）-->
-		<!-- 通过js获取设备像素比：  window.devicePixelRatio =设备像素 / CSS像素(一个比例 例如1/2)--> 
-		<script>
-			var iScale = 1 / window.devicePixelRatio;   
-			document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
-		</script>
-		<!--动态设置html字体大小-->
-		<script>
-			var iWidth = document.documentElement.clientWidth;
-			document.getElementsByTagName('html')[0].style.fontSize = iWidth / 16 + 'px';
-		</script>
-	</head>
-	<body>
-		<header class="clear">
-			<div class="head_top">
-				<span class="head_picA"></span>
-				<h1>鑫源布艺</h1>
-				<span class="head_picB"></span>
-				<span class="head_picC"></span>
-			</div>
-			<div id="head_down">
-				<ul id="oul">
-					<li><img src="img/A-1.jpg"></li>
-					<li><img src="img/aa.jpg"></li>
-					<li><img src="img/bb.jpg"></li>
-				</ul>
-				<div id="quan" class="clear">
-					<span class="juanA"></span>
-					<span class="juanB"></span>
-					<span class="juanC"></span>
-				</div>
-			</div>
-		</header>
-		<section>
-			<div class="content_nav clear">
-				<div class="content_nav_top">
-					<ul class="content_nav_one">
-						<li class="content_nav_pic"><img src="img/A-2.jpg"></li>
-						<li class="content_nav_font">办公窗帘</li>
-					</ul>
-					<ul class="content_nav_two">
-						<li class="content_nav_pic"><img src="img/A-13.jpg"></li>
-						<li class="content_nav_font">布艺窗帘</li>
-					</ul>
-					<ul class="content_nav_two">
-						<li class="content_nav_pic"><img src="img/A-14.jpg"></li>
-						<li class="content_nav_font">客房布草</li>
-					</ul>
-					<ul class="content_nav_two">
-						<li class="content_nav_pic"><img src="img/A-15.jpg"></li>
-						<li class="content_nav_font">台布椅套</li>
-					</ul>
-					<!-- <div class="content_nav_top"> -->
-					<ul class="content_nav_one">
-						<li class="content_nav_pic"><img src="img/A-16.jpg"></li>
-						<li class="content_nav_font">工艺软包</li>
-					</ul>
-					<ul class="content_nav_two">
-						<li class="content_nav_pic"><img src="img/A-17.jpg"></li>
-						<li class="content_nav_font">舞台幕布</li>
-					</ul>
-				<!-- </div> -->
-			</div>
-		</section>
-			<div class="content_explosion">
-				<img src="img/A-3.jpg" class="content_explosion_pic">
-				<h1>今日爆款</h1>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-4.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-7.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-9.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-10.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-11.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-				<div class="content_explosion_pic_one">
-					<div class="content_explosion_pic_one_bg">
-						<img src="img/A-12.jpg">
-						<span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
-					</div>
-					<div class="content_explosion_pic_Frame">
-						<span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
-						<div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span class="explosion_pic_Frame_black"></span></div>
-						<div class="content_explosion_pic_Frame_line"></div>
-						<div class="content_explosion_pic_Frame_bottom">
-							<span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
-							<span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		<footer>
-			<div class="footer_bottomsideBar clear">
-				<div class="footer_bottomsideBar_left">跟团游特卖</div>
-				<div class="footer_bottomsideBar_right">自由行特卖</div>
-			</div>
-			<div class="footer_bottomsideBar clear">
-				<div class="footer_bottomsideBar_left">自由行特卖</div>
-				<div class="footer_bottomsideBar_right">跟团游特卖</div>
-			</div>
-			<h1>热门目的地特卖</h1>
-			<div class="footer_bottomsideBar_pic">
-				<div class="footer_bottomsideBar_picA"></div>
-				<div class="footer_bottomsideBar_picB"></div>
-				<div class="footer_bottomsideBar_picA"></div>
-				<div class="footer_bottomsideBar_picB"></div>
-			</div>
-		</footer>
-	</body>
-	<script src="js/temaihui.js"></script>
-	<script src="js/move.js"></script>
-	
+  <!--设置初始比例（1：1像素还原）-->
+  <!-- 通过js获取设备像素比：  window.devicePixelRatio =设备像素 / CSS像素(一个比例 例如1/2)-->
+  <script>
+    var iScale = 1 / window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width,initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + ',user-scalable=no"/>');
+  </script>
+  <!--动态设置html字体大小-->
+  <script>
+    var iWidth = document.documentElement.clientWidth;
+    document.getElementsByTagName('html')[0].style.fontSize = iWidth / 16 + 'px';
+  </script>
+</head>
+
+<body>
+  <header class="clear">
+    <div class="head_top">
+      <span class="head_picA"></span>
+      <h1>鑫源布艺</h1>
+      <span class="head_picB"></span>
+      <span class="head_picC"></span>
+    </div>
+    <div id="head_down">
+      <ul id="oul">
+        <li><img src="img/A-1.jpg"></li>
+        <li><img src="img/aa.jpg"></li>
+        <li><img src="img/bb.jpg"></li>
+      </ul>
+      <div id="quan" class="clear">
+        <span class="juanA"></span>
+        <span class="juanB"></span>
+        <span class="juanC"></span>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="content_nav clear">
+      <div class="content_nav_top">
+        <ul class="content_nav_one">
+          <li class="content_nav_pic"><img src="img/A-2.jpg"></li>
+          <li class="content_nav_font">办公窗帘</li>
+        </ul>
+        <ul class="content_nav_two">
+          <li class="content_nav_pic"><img src="img/A-13.jpg"></li>
+          <li class="content_nav_font">布艺窗帘</li>
+        </ul>
+        <ul class="content_nav_two">
+          <li class="content_nav_pic"><img src="img/A-14.jpg"></li>
+          <li class="content_nav_font">客房布草</li>
+        </ul>
+        <ul class="content_nav_two">
+          <li class="content_nav_pic"><img src="img/A-15.jpg"></li>
+          <li class="content_nav_font">台布椅套</li>
+        </ul>
+        <!-- <div class="content_nav_top"> -->
+        <ul class="content_nav_one">
+          <li class="content_nav_pic"><img src="img/A-16.jpg"></li>
+          <li class="content_nav_font">工艺软包</li>
+        </ul>
+        <ul class="content_nav_two">
+          <li class="content_nav_pic"><img src="img/A-17.jpg"></li>
+          <li class="content_nav_font">舞台幕布</li>
+        </ul>
+        <!-- </div> -->
+      </div>
+  </section>
+  <div class="content_explosion">
+    <img src="img/A-3.jpg" class="content_explosion_pic">
+    <h1>今日爆款</h1>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-4.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-7.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-9.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-10.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-11.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+    <div class="content_explosion_pic_one">
+      <div class="content_explosion_pic_one_bg">
+        <img src="img/A-12.jpg">
+        <span class="content_explosion_pic_one_Tan">预售特卖，名额有限，预购从速。</span>
+      </div>
+      <div class="content_explosion_pic_Frame">
+        <span class="content_explosion_pic_Frame_top">[广州出发]韩国首尔5日自由行·【美食立减】赠地面大礼包 特卖汇</span>
+        <div class="content_explosion_pic_Frame_font"><span class="explosion_pic_Frame_money"></span>￥<span
+            class="explosion_pic_Frame_Digital">2274</span>起<span class="explosion_pic_Frame_Discount">6折</span><span
+            class="explosion_pic_Frame_black"></span></div>
+        <div class="content_explosion_pic_Frame_line"></div>
+        <div class="content_explosion_pic_Frame_bottom">
+          <span class="explosion_pic_Frame_bottom_more">更多韩国特卖</span>
+          <span class="explosion_pic_Frame_bottom_bg">立即抢购</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer_bottomsideBar clear">
+      <div class="footer_bottomsideBar_left">跟团游特卖</div>
+      <div class="footer_bottomsideBar_right">自由行特卖</div>
+    </div>
+    <div class="footer_bottomsideBar clear">
+      <div class="footer_bottomsideBar_left">自由行特卖</div>
+      <div class="footer_bottomsideBar_right">跟团游特卖</div>
+    </div>
+    <h1>热门目的地特卖</h1>
+    <div class="footer_bottomsideBar_pic">
+      <div class="footer_bottomsideBar_picA"></div>
+      <div class="footer_bottomsideBar_picB"></div>
+      <div class="footer_bottomsideBar_picA"></div>
+      <div class="footer_bottomsideBar_picB"></div>
+    </div>
+  </footer>
+</body>
+<script src="js/temaihui.js"></script>
+<script src="js/move.js"></script>
+
 </html>

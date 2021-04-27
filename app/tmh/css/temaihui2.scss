@@ -1,9 +1,14 @@
-@function RemPx($px){
-  $rem : 46.9375px;//根字体（动态字体）
-  @return ($px/$rem) + rem;
+@function RemPx($px) {
+  $rem: 46.9375px; //根字体（动态字体）
+  @return ($px/$rem)+rem;
 }
-.head_top{
-	width:  RemPx(750px);
+
+.head_top {
+  width: RemPx(750px);
   height: RemPx(103.26px);
-	background: #0a9fe1;
+  background: #0a9fe1;
+}
+
+.nav {
+  width: RemPx(750px);
 }
